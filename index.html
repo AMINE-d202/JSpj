@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Car Sale Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/projetjs.css">
+    
+    
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+/>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+      <!-- Nav Container -->
+      <div class="nav container">
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="#" class="logo">Car<span>Point</span></a>
+        <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#parts">Parts</a></li>
+            <li><a href="#blog">Our Blog</a></li>
+        </ul>
+       
+             <!--Navbar has two part the top one and the bottom one-->
+            <!--Here the shopping cart-->
+            <div class="navbar-top">
+                
+                <div>
+                   
+                    <!--Shopping cart-->
+                    <div class="shopping-cart">
+                        <div class="sum-prices">
+                            <!--Shopping cart logo-->
+                            <i
+                                class="fas fa-shopping-cart shoppingCartButton"
+                            ></i>
+                            <!--The total prices of products in the shopping cart -->
+                            <h6 id="sum-prices"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar bottom part -->
+           
+               
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                    <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                </ul>
+                <button id="checkoutButton" class="checkout hidden">Checkout</button>
+            </div>
+          
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We Have Every<span id="h1color">thing</span> <br>Your <span>Car</span> Need</h1>
+            <p id="glow"><strong>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nulla, corporis.</strong></p>
+            <!-- Home BUtton -->
+            <a href="#" class="btn">Discover Now</a>
+        </div>
+    </section>
+    <!-- Cars Section -->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>All Cars</span>
+            <h2>We have all types cars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam!</p>
+        </div>
+        <!-- Cars Container -->
+        <div class="cars-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <a href="https://hey.car/vehicle/f5b8ed60-2b6b-45a3-8f32-2a125454d020?utm_medium=meta&utm_source=leparking&utm_campaign=de_met_pro_cls_leparking_listing&utm_content=TOYOTA_SUPRA" target="_blank"><img src="./pic/jdmm (1).jpg" alt=""></a>
+                <strong><h2>Supra MK4</h2></strong>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <a href="https://www.leparking.ma/voiture-occasion-detail/toyota-corolla-e80-ae86/toyota-corolla-gt-twin-cam-ae86-86/8VF8B344.html" target="_blank"><img src="./pic/jdmm (2).jpg" alt=""></a>
+                <strong><h2>Toyota ae86</h2></strong>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <a href="https://www.avito.ma/ar/%D8%AD%D9%8A_%D8%A7%D9%84%D9%84%D9%8A%D9%85%D9%88%D9%86/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/BMW_E36_316i_52848971.htm" target="_blank"><img src="./pic/jdm.jpg" alt=""></a>
+                <strong><h2>BMW e36</h2></strong>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <a href="https://www.leparking.ma/voiture-occasion-detail/nissan-gt-r/nissan-gtr-3-8-v6-standard-edition-2p/MEO0P8QM.html" target="_blank" ><img src="./pic/jdm (4).jpg" alt=""></a>
+                <strong><h2>Nissan GTR</h2></strong>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <a href="https://automobiles.honda.com/civic-type-r" target="_blank"><img src="./pic/car5.jpg" alt=""></a>
+                <strong><h2>Honda Civic Type R</h2></strong>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <a href="https://www.catawiki.com/fr/l/70388373?utm_medium=affiliate&utm_source=coop&utm_content=LeParking&utm_campaign=ClassicCars-FR" target="_blank"><img src="./pic/car6.jpg" alt="" ></a>
+                <strong><h2>Porsche Cayman</h2></strong>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="./pic/about.png" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Cheap Prices With <br>Quality Cars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laborum blanditiis ratione numquam odio ea!</p>
+            <!-- About Button -->
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- Parts Section -->
+    <section class="parts" id="parts">
+        <div class="heading">
+            <span>What We Offer</span>
+            <h2>Our Car Is Always Excellent</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, doloremque.</p>
+        </div>
+        <!-- Parts Container -->
+        <div class="parts-container container">
+            
+            <div class="product-container">
+                    
+                <div class="products">
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img
+                                    src="./pic/part1.png"
+                                    alt="popular labtops and computers"
+                                />
+                                <div class="product-over">
+                                    <button
+                                        class="btn btn-small addToCart"
+                                        data-product-id="1"
+                                    >
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Part 1</h4>
+                                <span class="stars"></span>
+                                <p>
+                                    luctus quis et est. Integer pretium
+                                    purus
+                                </p>
+                                <h6 class="price">
+                                    $<span class="priceValue">999</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img
+                                    src="./pic/part2.png"
+                                    alt="popular labtops and computers"
+                                />
+                                <div class="product-over">
+                                    <button
+                                        class="btn btn-small addToCart"
+                                        data-product-id="2"
+                                    >
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Part 2</h4>
+                                <span class="stars"></span>
+                                <p>
+                                    luctus quis et est. Integer pretium
+                                    purus
+                                </p>
+                                <h6 class="price">
+                                    $<span class="priceValue">599</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img
+                                    src="./pic/part3.png"
+                                    alt="popular labtops and computers"
+                                />
+                                <div class="product-over">
+                                    <button
+                                        class="btn btn-small addToCart"
+                                        data-product-id="3"
+                                    >
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Part 3</h4>
+                                <span class="stars"></span>
+                                <p>
+                                    luctus quis et est. Integer pretium
+                                    purus
+                                </p>
+                                <h6 class="price">
+                                    $<span class="priceValue">650</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img
+                                    src="./pic/part4.png"
+                                    alt="popular labtops and computers"
+                                />
+                                <div class="product-over">
+                                    <button
+                                        class="btn btn-small addToCart"
+                                        data-product-id="4"
+                                    >
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Part 4</h4>
+                                <span class="stars"></span>
+                                <p>
+                                    luctus quis et est. Integer pretium
+                                    purus
+                                </p>
+                                <h6 class="price">
+                                    $<span class="priceValue">899</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+   
+                    
+        <div class="products">
+            <div class="product">
+                <div class="product-under">
+                    <figure class="product-image">
+                        <img
+                            src="./pic/part5.png"
+                            alt="popular labtops and computers"
+                        />
+                        <div class="product-over">
+                            <button
+                                class="btn btn-small addToCart"
+                                data-product-id="1"
+                            >
+                                <i class="fas fa-cart-plus"></i>Add
+                                to cart
+                            </button>
+                            
+                        </div>
+                    </figure>
+                    <div class="product-summary">
+                        <h4 class="productName">Part 1</h4>
+                        <span class="stars"></span>
+                        <p>
+                            luctus quis et est. Integer pretium
+                            purus
+                        </p>
+                        <h6 class="price">
+                            $<span class="priceValue">999</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-under">
+                    <figure class="product-image">
+                        <img
+                            src="./pic/part6.png"
+                            alt="popular labtops and computers"
+                        />
+                        <div class="product-over">
+                            <button
+                                class="btn btn-small addToCart"
+                                data-product-id="2"
+                            >
+                                <i class="fas fa-cart-plus"></i>Add
+                                to cart
+                            </button>
+                           
+                        </div>
+                    </figure>
+                    <div class="product-summary">
+                        <h4 class="productName">Part 2</h4>
+                        <span class="stars"></span>
+                        <p>
+                            luctus quis et est. Integer pretium
+                            purus
+                        </p>
+                        <h6 class="price">
+                            $<span class="priceValue">599</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-under">
+                    <figure class="product-image">
+                        <img
+                            src="./pic/part7.jpg"
+                            alt="popular labtops and computers"
+                        />
+                        <div class="product-over">
+                            <button
+                                class="btn btn-small addToCart"
+                                data-product-id="3"
+                            >
+                                <i class="fas fa-cart-plus"></i>Add
+                                to cart
+                            </button>
+                           
+                        </div>
+                    </figure>
+                    <div class="product-summary">
+                        <h4 class="productName">Part 3</h4>
+                        <span class="stars"></span>
+                        <p>
+                            luctus quis et est. Integer pretium
+                            purus
+                        </p>
+                        <h6 class="price">
+                            $<span class="priceValue">650</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-under">
+                    <figure class="product-image">
+                        <img
+                            src="./pic/part8 (2).png"
+                            alt="popular labtops and computers"
+                        />
+                        <div class="product-over">
+                            <button
+                                class="btn btn-small addToCart"
+                                data-product-id="4"
+                            >
+                                <i class="fas fa-cart-plus"></i>Add
+                                to cart
+                            </button>
+                            
+                        </div>
+                    </figure>
+                    <div class="product-summary">
+                        <h4 class="productName">Part 4</h4>
+                        <span class="stars"></span>
+                        <p>
+                            luctus quis et est. Integer pretium
+                            purus
+                        </p>
+                        <h6 class="price">
+                            $<span class="priceValue">899</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                
+    </section>
+    <!-- Blog Container -->
+    <section class="blog" id="blog">
+        <div class="heading">
+            <span>Blog & News</span>
+            <h2>Our Blog Content</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, doloremque.</p>
+        </div>
+        <!-- Blog Container -->
+        <div class="blog-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="./pic/car1.jpg" alt="">
+                <span>Feb 14 2021</span>
+                <h3>How To Get Perfect Car At Low Price</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, veniam.</p>
+                <a href="https://cars.usnews.com/cars-trucks/advice/how-to-negotiate-the-best-price-on-a-new-car" target="_blank" class="blog-btn"><strong>Read More</strong><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="./pic/car4.jpg" alt="">
+                <span>Feb 14 2021</span>
+                <h3>How To Get Perfect Car At Low Price</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, veniam.</p>
+                <a href="https://cars.usnews.com/cars-trucks/advice/how-to-negotiate-the-best-price-on-a-new-car" target="_blank" class="blog-btn"><strong>Read More</strong><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="./pic/jdmm (2).jpg" alt="">
+                <span>Feb 14 2021</span>
+                <h3>How To Get Perfect Car At Low Price</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, veniam.</p>
+                <a href="https://cars.usnews.com/cars-trucks/advice/how-to-negotiate-the-best-price-on-a-new-car" target="_blank" class="blog-btn"><strong>Read More</strong><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo"><span>Red</span>Line</a>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100006149899414" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://wa.me/qr/PDDZJTS4X4GJM1" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://instagram.com/mugi__iy?igshid=NzMyMjgxZWIzNw==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Cars</a>
+                <a href="#">Parts</a>
+                <a href="#">Sales</a>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>+212664-993561</p>
+                <p>xdamineqw@gmail.com</p>
+                <p>xdamineqw4g@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; IYOUBI,Amine All Right Reserved</p>
+    </div>
+    <!-- Link To Js -->
+    
+    <script src="./js/shopping-cart.js"></script>
+    
+    
+</body>
+</html>
